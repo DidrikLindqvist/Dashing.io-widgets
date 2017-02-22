@@ -61,7 +61,7 @@ class WunderListHandl
 
 end
 
-SCHEDULER.every '5s', :first_in => 0 do |job|
+SCHEDULER.every '1m', :first_in => 0 do |job|
     
     wunderHandler = WunderListHandl.new
 
