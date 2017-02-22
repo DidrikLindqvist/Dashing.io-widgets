@@ -1,0 +1,32 @@
+// https://github.com/DidrikLindqvist/Dashing.io-widgets
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #F18F01;
+
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-list styles
+// ----------------------------------------------------------------------------
+.widget-wunderlist {
+
+  background-color: $background-color;
+  vertical-align: top;
+
+  ul {
+    margin: 0 15px;
+    text-align: left;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+
+}

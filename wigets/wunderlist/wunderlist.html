@@ -1,0 +1,15 @@
+ <!-- https://github.com/DidrikLindqvist/Dashing.io-widgets -->
+<h1 class="title" data-bind="taskTitle"></h1>
+
+<ul class="list-nostyle">
+	<li data-foreach-task="tasks">
+		<span class="task_title" data-bind="task.task_title"></span>
+	</li>
+</ul>
+
+
+
+<h3 id="notification" class="title" data-bind="tasks.notification"></h3>
+
+<p class="more-info" data-bind="moreinfo"></p>
+<p class="updated-at" data-bind="updatedAtMessage"></p>
