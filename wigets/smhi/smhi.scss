@@ -1,0 +1,33 @@
+// https://github.com/DidrikLindqvist/Dashing.io-widgets 
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #048BA8;
+$value-color:       #fff;
+
+// ----------------------------------------------------------------------------
+// Widget-list styles
+// ----------------------------------------------------------------------------
+.widget-smhi {
+
+  background-color: $background-color;
+  vertical-align: top;
+
+  ul {
+    margin: 0 15px;
+    text-align: left;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+ .subtask_title {
+    font-size: 18px;
+    padding-left:15px;
+ }
+
+}
