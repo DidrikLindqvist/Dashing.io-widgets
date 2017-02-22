@@ -67,7 +67,7 @@ class WhetherHandler
   end
 
   def getWheterInfo()
-    return @whether_info
+    return @whether_info , @city
   end
 
 end
@@ -77,7 +77,7 @@ SCHEDULER.every '10m', :first_in => 0 do |job|
 
   wHandler = WhetherHandler.new
   wHandler.parseWhether()
-  whether_info = wHandler.getWheterInfo()
-  send_event('smhi', days: whether_info)
+  whether_info, city = wHandler.getWheterInfo()
+  send_event('smhi', city: city , days: whether_info)
 
 end
